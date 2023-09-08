@@ -34,7 +34,7 @@ geckodriver_path = r"location\gecko\geckodriver.exe"
 text_length = 12
 text_length2 = 15
 os.startfile(tor_browser_path)
-file_path = "accounts_rodos.txt"
+file_path = "accounts.txt"
 file_path2 = "accounts_fail.txt"
 os.environ["PATH"] += os.pathsep + os.path.dirname(geckodriver_path)
 tor_proxy = "socks5://127.0.0.1:9150"
@@ -50,7 +50,7 @@ while True:
         driver.get("https://ro.grepolis.com/")
         user = generate_random_text(text_length)
         passw = generate_random_text(text_length2)
-        print("[{}]Account_name: {}".format(color2 + "A-BOMB" + Fore.RESET, user) +", "+ "{}password: {}".format(color2 + Fore.RESET, passw))
+        print("[{}]Account_name: {}".format(color2 + "Script" + Fore.RESET, user) +", "+ "{}password: {}".format(color2 + Fore.RESET, passw))
 
         with open(file_path, "a") as file:
             file.write("User: " + user + ", " + "Password: " + passw + "\n")
