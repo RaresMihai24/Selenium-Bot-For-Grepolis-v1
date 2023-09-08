@@ -8,6 +8,7 @@ Functionalities:
 - saves said accounts on two text files, one with the ones that failed due to captcha and one with all the accounts
 - enters every succesfull account and builds one level of the senat and then activates vacantion mode
 - reloads tor when "Error connecting to the server" appears > 10 times
+- no errors in the console anymore, all errors are saved in a file "error_log.txt"
 - has a fancy output in console
 
 "11 Siguranță, fraudă
